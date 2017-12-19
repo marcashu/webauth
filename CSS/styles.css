@@ -1,0 +1,1431 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-color: #eeeeee;
+	/*background: radial-gradient(circle, #3a3a3a, #3a3a3a, #c2c2c2);*/
+}
+
+@font-face
+{
+  font-family: gamecubefontimport;
+  src:url("GameCube.ttf");
+}
+
+#header
+{
+	font-family: gamecubefontimport;
+}
+
+
+
+
+/*------------------Home Page-------------------*/
+/*Navigation*/
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #3a3a3a;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 3;
+}
+
+.li {
+  
+  display: inline;
+  font-family: 'Fjalla One', sans-serif;
+    font-size: 1.em
+}
+
+.li .a, .consolebtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li .a:hover, .dropdown:hover .consolebtn {
+    background-color: #6568A8;
+}
+/*Navigation*/
+
+/* Pop Up Overlay*/
+#popupoverlay{
+  left: 0;
+  right:0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 1024px) {
+  #popupoverlay{
+    display: none;
+  }
+}
+
+#box{
+  left: 0;
+  right:0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #6568A8;
+}
+
+#msg{
+  font-size: 8em;
+  font-family: gamecubefontimport;
+  text-align: center;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.myBtn{
+  position: relative;
+  top: 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2em;
+}
+/* Pop Up Overlay*/
+
+#nav{
+  position: absolute;
+  display: table;
+}
+@font-face
+{
+  font-family: gamecubefontimport;
+  src:url("GameCube.ttf");
+}
+
+
+/*GameCubeIndigo SLIDES*/
+.gamecube {
+  color: white;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  top: 7.5vh;
+  height: 90vh;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gamecube {
+    top: 4vh;
+    height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .gamecube {
+    top: 14vh;
+    height: 95vh;
+  }
+}
+/*GameCubeIndigo SLIDES*/
+
+
+/*GameCube SLIDESHOW OVERLAY*/
+.gamecubeindigopics {
+  width: 40vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gamecubeindigopics{
+    width: 90vw;
+    padding-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .gamecubeindigopics{
+    width: 90vw;
+    padding-top: 19vh;
+  }
+}
+
+.overlay1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #6568A8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  overflow: hidden;
+  z-index: 2;
+  /*opacity: 0.5;*/
+}
+
+.gamecube:hover .overlay1 {
+  height: 100%;
+}
+
+.overlaytext {
+  white-space: nowrap; 
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+/*GameCube SLIDESHOW OVERLAY*/
+
+
+/*Other GameCube Consoles Section*/
+.section2-3wrapper{
+  top: 9vh;
+  color: white;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+  width: 100%;
+  text-align: center; 
+}
+
+@media only screen and (max-width: 1024px) {
+  .section2-3wrapper{
+    top: 7vh;
+  }
+}
+
+.section2{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: left;
+  position: relative;
+  left: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+  .section2{
+    display: none;
+  }
+}
+
+.section2overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  /*opacity: 0.5;*/
+}
+
+.section2:hover .section2overlay {
+  height: 100%;
+}
+
+
+.section3{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: right;
+  position: relative;
+  right: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+  .section3{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .section3 {
+    top: 8vh;
+  }
+}
+
+
+.section3overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  /*opacity: 0.5;*/
+}
+
+.section3:hover .section3overlay {
+  height: 100%;
+}
+
+.otherconsoles{
+  height: 60vh;
+  width: auto;
+}
+
+@media only screen and (max-width: 1350px) {
+  .otherconsoles{
+    padding-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .otherconsoles{
+    height: 40vh;
+    padding-top: 17vh;
+  }
+}
+
+.detail{
+  color: black;
+  text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .detail{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .detail{
+    font-size: 0.5em; 
+  }
+}
+
+/*Other GameCube Consoles Section*/
+
+/* Games Section*/
+.section4{
+  width: 30vw;
+  height: auto;
+  background-color: white;
+  float: left;
+  position: relative;
+  top: 12vh;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 450px) {
+.section4{
+    top: 18vh;
+  }
+}
+
+
+.section4overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #6568A8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  /*opacity: 0.5;*/
+}
+
+.section4:hover .section4overlay {
+  height: 100%;
+}
+
+.section5{
+  height: inherit;
+  background-color: white;
+  float: left;
+  position: relative;
+  top: 12vh;
+  width: inherit;
+  margin-left: 4vw;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 450px) {
+.section5{
+    top: 18vh;
+  }
+}
+
+.section5overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #6568A8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  /*opacity: 0.5;*/
+}
+
+.section5:hover .section5overlay {
+  height: 100%;
+}
+
+.section6{
+  width: inherit;
+  height: inherit;
+  background-color: white;
+  float: right;
+  position: relative;
+  top: 12vh;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 450px) {
+.section6{
+    top: 18vh;
+  }
+}
+
+.section6overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #6568A8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  text-decoration: none;
+  /*opacity: 0.5;*/
+}
+
+.section6:hover .section6overlay {
+  height: 100%;
+}
+
+.games{
+  height: auto;
+  width: 30vw;
+}
+/* Games Section*/
+
+/*Custom Controller*/
+.section7{
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+  position: relative;
+  z-index: -1;
+  top: 14vh;
+  float: left;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .section7{
+    height: 55vh;
+    padding-top: 7vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .section7{
+    height: 58vh;
+    padding-top: 7vh;
+    top: 20vh;
+  }
+}
+
+.section7overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4694B6;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.8s ease;
+  margin: 0 auto;
+  /*opacity: 0.5;*/
+}
+
+.section7:hover .section7overlay {
+  height: 100%;
+}
+
+.cusomizerpic{
+  z-index: -2;
+  height: 70vh;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  left: 50%;
+  padding-top: 8vh;
+}
+
+@media only screen and (max-width: 1350px) {
+  .cusomizerpic{
+    height: 30vh;
+    width: auto;
+  }
+
+  #gametext{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cusomizerpic{
+    height: 17vh;
+    width: auto;
+    padding-top: 15vh
+  }
+}
+
+/*Custom Controller*/
+
+
+
+/*------------------Home Page-------------------*/
+
+
+
+
+/*------------------Customizer Page-------------------*/
+/*Customizer Page Pictures*/
+.piccontainer{
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  top: 10vh;
+  right: 0;
+  left: 0;
+  bottom: 3vh;
+}
+/* Customizer Page Pictures*/
+
+/* Option selection boxes*/
+#frontbuttonhousing{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 6vh;
+  float: right;
+  position: absolute;
+  right: 15vw;
+  display: inline-block;
+}
+
+#backbuttonhousing{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 6vh;
+  float: right;
+  position: absolute;
+  right: 3vw;
+}
+
+#controllerbuttons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 50vh;
+  float: right;
+  position: absolute;
+  right: 15vw;
+  display: inline-block;
+}
+
+#controllersticks{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 50vh;
+  float: right;
+  position: absolute;
+  right: 3vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  #frontbuttonhousing{
+    top: 10vh;
+  }
+
+  #backbuttonhousing{
+    top: 10vh;
+    right: 3vw;
+  }
+
+  #controllerbuttons{
+    top: 40vh;
+    height: 25vh;
+  }
+
+  #controllersticks{
+    top: 40vh;
+    height: 25vh;
+  }
+}
+
+.button .text{
+  display: block;
+  color: black;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 1vh;
+}
+
+.button .text:hover {
+  background-color: #555;
+  color: white;
+}
+
+.text{
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+}
+.buttonheader{
+  font-family: gamecubefontimport;
+  font-size: 0.5em;
+}
+
+#front{
+  height: 70vh;
+  width: auto;
+  float: left;
+}
+
+.frontpics{
+  position: relative;
+  height: 30vh;
+  width: auto;
+  float: left;
+}
+
+#back{
+  height: 70vh;
+  width: auto;
+  float: left;
+}
+
+.var {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 70vh;
+  width: auto;
+}
+
+.frontcomp{
+  position: absolute;
+  left: 0;
+  height: 70vh;
+  width: auto;
+  float: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  #front{
+    height: 38vh;
+    width: auto;
+  }
+
+  .frontcomp{
+    height: 38vh;
+    width: auto;
+  }
+
+  .var {
+  height: 38vh;
+  width: auto;
+}
+
+  #back{
+    height: 40vh;
+    width: auto;
+    float: left;
+  }
+}
+
+/* Option selection boxes*/
+/*------------------Customizer Page-------------------*/
+
+
+
+
+/*-----------------------Games Page---------------------------*/
+
+/*Cart*/
+#cartholder{
+  position: fixed;
+  top: 7vh;
+  width: 95%;
+  /* height: 100%; */
+  background: #222;
+  color:#fff;
+  right: 3vw;
+  text-align: center;
+  text-decoration: none;
+  background-color: :#fff;
+}
+
+#cartcontent{
+  width:300px; 
+  height:auto;
+}
+
+#cartmini{
+  position: fixed;
+  top: 7vh;
+  width: 95%;
+  /* height: 100%; */
+  background: #222;
+  color:#fff;
+  right: 3vw;
+  text-align: center;
+  text-decoration: none;
+  background-color: :#fff;
+}
+
+.cart{
+  position: fixed;
+  top: 7vh;
+  width: 95%;
+  /* height: 100%; */
+  background: #222;
+  color:#fff;
+  right: 3vw;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cart{
+    top: 9vh;
+  }
+}
+
+.total{
+  margin:0;
+  text-align:right;
+  padding-right:20px;
+  margin-top: 10px;
+}
+
+.carttitle{
+  font-size: 1.2em;
+}
+
+.dropitems{
+  float: right;
+  font-size: 0.9em;
+  font-style: italic;
+  padding-right: 0.3vw;
+}
+
+/*Cart*/
+
+/*Heading*/
+.bestgameswrapper{
+  width: 100%
+  background-color: #6568A8;
+  position: relative;
+  top: 30.7vh;
+  height: 20vh;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bestgameswrapper{
+    top: 25vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .bestgameswrapper{
+    top: 35vh;
+  }
+}
+
+.bestgames{
+  font-size: 4em;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 6vh;
+}
+
+@media only screen and (max-width: 450px) {
+  .bestgames{
+      font-size: 2em;
+  }
+}
+
+.bestgamesbox{
+  background-color: #6568A8;
+  position: relative;
+  width: 100%
+  right: 0;
+}
+/*Heading*/
+
+/*Images*/
+.gamewrapper{
+  position: relative;
+  background-color: white;
+  text-align: center;
+  top: 35vh;
+  height: 120vh;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gamewrapper{
+    top: 30vh;
+    height: 300vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .gamewrapper{
+    top: 40vh;
+    height: 200vh;
+  }
+}
+
+.gamewrapper li{
+	list-style: none;
+	float: left;
+	overflow: hidden;
+	bottom: 4vh;
+  width: 26vh;
+  height: 60vh;
+  margin-right: 3vw;
+  margin-left: 3vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gamewrapper li{
+    width: 40%;
+    height: 60vh;
+    top: 0;
+    margin-left: 4.3vw;
+    margin-right: 3vw;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .gamewrapper li{
+    width: 35%;
+    height: 40vh;
+    margin-right: 1vw;
+    left: 0;
+  }
+}
+
+
+.priceHolder{
+  background-color: #333;
+  padding: 3vh;
+  left: 50%;
+  word-wrap: break-word;
+  height: 6vh;
+  margin-bottom: 10vh;
+}
+
+.title{
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  position: relative;
+}
+
+.price{
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .title{
+    font-size: 1.7em;
+  }
+
+  .price{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title{
+    font-size: 0.8em;
+  }
+  .price{
+    font-size: 0.9em;
+  }
+
+}
+
+#game1{
+  float: left;
+  position: relative;
+  top: 1.5vh;
+  margin-right: 5vw;
+}
+
+#game2{
+  float: left;
+  position: relative;
+  top: 1.5vh;
+  margin-right: 5vw;
+}
+
+#game3{
+  float: left;
+  position: relative;
+  top: 1.5vh;
+  margin-right: 5vw;
+}
+
+#game4{
+  float: left;
+  position: relative;
+  top: 1.5vh;
+  margin-right: 5vw;
+}
+
+#game5{
+  float: left;
+  position: relative;
+  top: 1.5vh;
+}
+
+#game6{
+  float: left;
+  position: relative;
+  top: 1.2vh;
+  margin-right: 5vw;
+  padding-bottom: 15vh;
+}
+
+#game7{
+  float: left;
+  position: relative;
+  top: 1.2vh;
+  margin-right: 5vw;
+  padding-bottom: 15vh;
+}
+
+#game8{
+  float: left;
+  position: relative;
+  top: 1.2vh;
+  margin-right: 5vw;
+  padding-bottom: 15vh;
+}
+
+#game9{
+  float: left;
+  position: relative;
+  top: 1.2vh;
+  margin-right: 5vw;
+  padding-bottom: 15vh;
+}
+
+#game10{
+  float: left;
+  position: relative;
+  top: 1.2vh;
+  padding-bottom: 15vh;
+}
+
+.gamepics{
+  height: auto;
+  width: 12vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gamepics{
+    height: auto;
+    width: 40vw;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .gamepics{
+    height: auto;
+    width: 30vw;
+    top: 0;
+  }
+}
+
+}
+/*Images*/
+
+
+/*-----------------------Games Page---------------------------*/
+
+
+
+
+
+/*-----------------------Consoles Page---------------------------*/
+
+/*Heading*/
+.consolesheadingwrapper{
+  width: 100%;
+  position: relative;
+  top: 7.5vh;
+  height: 20vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .consolesheadingwrapper{
+    top: 6vh;
+  }
+}
+
+.standardconsolesheading{
+  font-size: 3em;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 6vh;
+}
+
+.standardconsolesbox{
+  background-color: #6568A8;
+  position: relative;
+  width: 48vw;
+  float: left;
+  top: 7.5vh;
+}
+
+.specialconsolesheading{
+  font-size: 3em;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 6vh;
+}
+
+.specialconsolesbox{
+  background-color: #6568A8;
+  position: relative;
+  width: 48vw;
+  float: right;
+  top: 7.5vh;
+}
+/*Heading*/
+
+.consoleswrapper1{
+  top: 9vh;
+  color: white;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+  width: 100%;
+  text-align: center; 
+}
+
+.standard1{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: left;
+  position: relative;
+  left: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .standard1{
+    height: 40vh;
+  }
+}
+
+#s1{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#s1:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.overlaybox{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.standard1:hover #s1{
+  opacity: 0.3;
+}
+
+.standard1:hover .overlaybox{
+  opacity: 1;
+}
+
+.hovertexts1{
+  background-color: #6568A8;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.special1{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: right;
+  position: relative;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .special1{
+    height: 40vh;
+  }
+}
+
+
+#l1{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#l1:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.special1:hover #l1 {
+  opacity: 0.3;
+}
+
+.special1:hover .overlaybox{
+  opacity: 1;
+}
+
+.hovertexts2 {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.consoleswrapper2{
+  top: 7.5vh;
+  color: white;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+  width: 100%;
+  text-align: center; 
+}
+
+.standard2{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: left;
+  position: relative;
+  left: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .standard2{
+    height: 40vh;
+  }
+}
+
+
+#s2{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#s2:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.standard2:hover #s2{
+  opacity: 0.3;
+}
+
+.standard2:hover .overlaybox{
+  opacity: 1;
+}
+
+.hovertexts3 {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.special2{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: right;
+  position: relative;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .special2{
+    height: 40vh;
+  }
+}
+
+
+#l2{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#l2:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.special2:hover #l2{
+  opacity: 0.3;
+}
+
+.special2:hover .overlaybox{
+  opacity: 1;
+}
+
+.hovertexts4 {
+  background-color: #09888d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.consoleswrapper3{
+  top: 7.5vh;
+  color: white;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+  width: 100%;
+  text-align: center; 
+}
+
+.standard3{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: left;
+  position: relative;
+  left: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .standard3{
+    height: 40vh;
+  }
+}
+
+#s3{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#s3:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.standard3:hover #s3{
+  opacity: 0.3;
+}
+
+.standard3:hover .overlaybox{
+  opacity: 1;
+}
+
+.hovertexts5{
+  background-color: silver;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+.special3{
+  width: 48vw;
+  height: 90vh;
+  background-color: white;
+  float: right;
+  position: relative;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .special3{
+    height: 40vh;
+  }
+}
+
+#l3{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#l3:hover{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.special3:hover #l3{
+  opacity: 0.3;
+}
+
+.special3:hover .overlaybox{
+  opacity: 1;
+}
+
+.hovertexts6{
+  background-color: gold;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.consolepics{
+  height: auto;
+  width: 34vw;
+  padding-top: 8vh;
+}
+/*-----------------------Consoles Page---------------------------*/
+
+
+/*-----------------------Support Page---------------------------*/
+.headingwrapper{
+  width: 100%
+  background-color: #6568A8;
+  position: relative;
+  top: 1vh;
+  height: 20vh;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .headingwrapper{
+    top: 25vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .headingwrapper{
+    top: 35vh;
+  }
+}
+
+.headingtext{
+  font-size: 4em;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 6vh;
+}
+
+@media only screen and (max-width: 450px) {
+  .headingtext{
+      font-size: 2em;
+  }
+}
+
+.headingbox{
+  background-color: #6568A8;
+  position: relative;
+  width: 100%
+  right: 0;
+}
+
+.mainsection{
+  top: 4.5vh;
+  background-color: white;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.video{
+  top: 10vh;
+}
+/*-----------------------Support Page---------------------------*/

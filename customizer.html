@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="JS/customizer_javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<meta charset="utf-8">
+<title>customizer</title>
+</head>
+
+<body>
+<!--NAVIGATION-->
+<ul class="ul">
+	<li class="li"><a class="a" href="index.html">Home</a></li>
+	<li class="li"><a class="a" href="#consoles.html">Consoles</a></li>
+	<li class="li"><a class="a" href="games.html">Games</a></li>
+	<li class="li"><a class="a" href="customizer.html">Custom Controller</a></li>
+	<li class="li"><a class="a" href="support.html">Support and Information</a></li>
+</ul>
+<!--NAVIGATION-->
+
+<!--Pictures-->
+<section class="piccontainer">
+	<div class="frontpics">
+		<img src ="Assets/gamecube-3.jpg" id="front"/>
+		<img src ="Assets/startbutton.png" class="frontcomp"/>
+		<img src ="Assets/x-and-y-buttons.png" class="frontcomp"/>
+		<img src ="Assets/dpad.png" class="frontcomp"/>
+		<img src ="Assets/thumbstick.png" class="frontcomp"/>
+		<img src ="Assets/c-stick.png" class="frontcomp"/>
+        <img src ="Assets/startbutton.png" class="var" id="pic1"/>
+        <img src ="Assets/startbutton-black.png" class="var" id="pic2"/>
+        <img src ="Assets/x-and-y-buttons.png" class="var" id="pic3"/>
+        <img src ="Assets/x-and-y-buttons-black.png" class="var" id="pic4"/>
+        <img src ="Assets/dpad.png" class="var" id="pic5"/>
+        <img src ="Assets/dpad-black.png" class="var" id="pic6"/>
+        <img src ="Assets/thumbstick.png" class="var" id="pic7"/>
+		<img src ="Assets/thumbstick-black.png" class="var" id="pic8"/>
+        <img src ="Assets/c-stick.png" class="var" id="pic9"/>
+        <img src ="Assets/c-stick-red.png" class="var" id="pic10"/>
+        <img src ="Assets/c-stick-green.png" class="var" id="pic11"/>
+        <img src ="Assets/c-stick-blue.png" class="var" id="pic12"/>
+	</div>
+	<div>
+		<img src = "Assets/indigo-back-controller.jpg" id="back"/>
+	</div>
+
+	<ul id="frontbuttonhousing">
+		<li class="buttonheader"><h1>FRONT</h1></li>
+		<li class="button" onclick="redf()"><p class="text">Red</p></li>
+		<li class="button" onclick="greenf()"><p class="text">Green</p></li>
+		<li class="button" onclick="yellowf()"><p class="text">Yellow</p></li>
+		<li class="button" onclick="orangef()"><p class="text">Orange</p></li>
+		<li class="button" onclick="turquoisef()"><p class="text">Turquoise</p></li>
+		<li class="button" onclick="indigof()"><p class="text">Indigo</p></li>
+		<li class="button" onclick="pinkf()"><p class="text">Pink</p></li>
+		<li class="button" onclick="blackf()"><p class="text">Black</p></li>
+	</ul>
+	<ul id="backbuttonhousing">	
+		<li class="buttonheader"><h1>BACK</h1></li>
+		<li class="button" onclick="redb()"><p class="text">Red</p></li>
+		<li class="button" onclick="greenb()"><p class="text" >Green</p></li>
+		<li class="button" onclick="yellowb()"><p class="text">Yellow</p></li>
+		<li class="button" onclick="orangeb()"><p class="text">Orange</p></li>
+		<li class="button" onclick="turquoiseb()"><p class="text">Turquoise</p></li>
+		<li class="button" onclick="indigob()"><p class="text">Indigo</p></li>
+		<li class="button" onclick="pinkb()"><p class="text">Pink</p></li>
+		<li class="button" onclick="blackb()"><p class="text">Black</p></li>
+	</ul>
+
+	<ul id="controllerbuttons">
+		<li class="buttonheader"><h1>BUTTONS</h1></li>
+		<li class="button" id="1"><p class="text">White Pause</p></li>
+		<li class="button" id="2"><p class="text">Black Pause</p></li>
+		<li class="button" id="3"><p class="text">White X and Y</p></li>
+		<li class="button" id="4"><p class="text">Black X and Y</p></li>
+		<li class="button" id="5"><p class="text">White D-Pad</p></li>
+		<li class="button" id="6"><p class="text">Black D-Pad</p></li>
+	</ul>
+
+	<ul id="controllersticks">
+		<li class="buttonheader"><h1>STICKS</h1></li>
+		<li class="button" id="7"><p class="text">White Thumbstick</p></li>
+		<li class="button" id="8"><p class="text">Black Thumstick</p></li>
+		<li class="button" id="9"><p class="text">Yellow C-Stick</p></li>
+		<li class="button" id="10"><p class="text">Red C-Stick</p></li>
+		<li class="button" id="11"><p class="text">Green C-Stick</p></li>
+		<li class="button" id="12"><p class="text">Blue C-Stick</p></li>
+	</ul>
+</section>
+</body>

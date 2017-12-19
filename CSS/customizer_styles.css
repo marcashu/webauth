@@ -1,0 +1,124 @@
+
+body{
+  background-color: #eeeeee;
+}
+
+#nav{
+  position: absolute;
+  display: table;
+}
+
+@font-face
+{
+  font-family: gamecubefontimport;
+  src:url("GameCube.ttf");
+}
+
+/*Customizer Page Pictures*/
+.piccontainer{
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  top: 10vh;
+  right: 0;
+  bottom: 3vh;
+}
+
+/* Customizer Page Pictures*/
+
+#frontbuttonhousing{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 2vh;
+  float: right;
+  position: relative;
+  right: 15vw;
+  display: inline-block;
+}
+
+#backbuttonhousing{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 2vh;
+  float: right;
+  position: relative;
+  right: -7vw;
+}
+
+#controllerbuttons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 45vh;
+  float: right;
+  position: inherit;
+  right: 15vw;
+  display: inline-block;
+}
+
+#controllersticks{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+  background-color: #6568A8;
+  top: 45vh;
+  float: right;
+  position: inherit;
+  right: 3vw;
+}
+
+}
+.button .text{
+  display: block;
+  color: green;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.button .text:hover {
+  background-color: #555;
+  color: white;
+}
+
+.text{
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+}
+.buttonheader{
+  font-family: gamecubefontimport;
+  font-size: 0.6em;
+}
+
+
+#front{
+  height: 70vh;
+  width: auto;
+  float: left;
+}
+
+#back{
+  height: 70vh;
+  width: auto;
+  float: left;
+}
+/* Option selection boxed*/
+
+/*
+#canvas{
+  height: 10vh;
+  width: 10vw; 
+  bottom: 0;
+  background-color: lightgrey;
+  z-index: +2;
+}*/
