@@ -604,7 +604,7 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 .buttonheader{
-  font-family: gamecubefontimport;
+  font-family:  'Fjalla One', sans-serif;
   font-size: 0.5em;
 }
 
@@ -1403,22 +1403,24 @@ a {
 }
 
 .mainsection{
-  top: 4.5vh;
+  top: 8vh;
   background-color: white;
   width: 100%;
-  height: 200vh;
+  height: 270vh;
   position: relative;
+  overflow: scroll;
 }
 
 @media only screen and (max-width: 1024px) {
   .mainsection{
-    top: 1vh;
+    top: 4vh;
+    height: 150vh;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .mainsection{
-    top: 17vh;
+    top: 21vh;
   }
 }
 
@@ -1430,6 +1432,7 @@ a {
 .video{
   width: 70vw; 
   height: 70vh;
+  border: 0;
 }
 
 @media only screen and (max-width: 1024px) {
